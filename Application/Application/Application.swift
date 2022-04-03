@@ -15,7 +15,7 @@ import Platform
 final class Application: NSObject {
     static let shared = Application()
 
-    let networkProvider: GoogleService
+    let networkProvider: ServiceAPI
     let navigator: Navigator
     
     override init() {
@@ -29,7 +29,7 @@ final class Application: NSObject {
 extension Application {
     func presentRootScreen(in window: UIWindow?) {
         guard let window = window else { return }
-        let viewModel = ExampleViewModel(networkProvider: networkProvider)
-        navigator.show(segue: .viewController(viewModel), sender: nil, transition: .root(in: window))
+        let homeTabViewModel = HomeTabViewModel(networkProvider: networkProvider)
+        navigator.show(segue: .tabs(viewModel: homeTabViewModel), sender: nil, transition: .root(in: window))
     }
 }

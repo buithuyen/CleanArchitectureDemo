@@ -608,7 +608,7 @@ public struct _R: Rswift.Validatable {
 
     #if os(iOS) || os(tvOS)
     public struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      public typealias InitialController = ExampleViewController
+      public typealias InitialController = UIKit.UIViewController
 
       public let bundle = R.hostingBundle
       public let name = "Main"

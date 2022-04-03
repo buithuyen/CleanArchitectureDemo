@@ -13,4 +13,10 @@ struct NetworkConfigs {
         static let key = "AIzaSyAxdz4-JfihFHsU-wFs8pLuU0jNfnudefU"
         static let type = "restaurant"
     }
+    
+    struct Parse {
+        static let baseURL = "https://bety.back4app.io/classes/"
+        static let applicationID = "bJ2BytCmA3acg0PhXWHuRZSjlfwKuZHnvSGfysOF"
+        static let restAPIKey = "qnyi0NRg0zEbUcwL4FSYgYeFi8e5wLkwAUxUDUlb"
+    }
 }

@@ -11,7 +11,7 @@
 		1D3F838C27DB97280026E33F /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F838B27DB97280026E33F /* Place.swift */; };
 		1D3F838E27DB975B0026E33F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F838D27DB975B0026E33F /* Location.swift */; };
 		1D3F839027DB97670026E33F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F838F27DB97670026E33F /* Photo.swift */; };
-		1D7C0A4527E9BB6500973617 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4427E9BB6500973617 /* GoogleService.swift */; };
+		1D7C0A4527E9BB6500973617 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4427E9BB6500973617 /* ServiceAPI.swift */; };
 		1D7C0A4727E9BF0400973617 /* PlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4627E9BF0400973617 /* PlaceDetail.swift */; };
 		1D7C0A4927E9BF2700973617 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4827E9BF2700973617 /* Geometry.swift */; };
 		1D7C0A4B27E9BF5100973617 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4A27E9BF5100973617 /* Review.swift */; };
@@ -23,7 +23,7 @@
 		1D3F838B27DB97280026E33F /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		1D3F838D27DB975B0026E33F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1D3F838F27DB97670026E33F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		1D7C0A4427E9BB6500973617 /* GoogleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
+		1D7C0A4427E9BB6500973617 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		1D7C0A4627E9BF0400973617 /* PlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetail.swift; sourceTree = "<group>"; };
 		1D7C0A4827E9BF2700973617 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		1D7C0A4A27E9BF5100973617 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		1D7C0A4327E9BB4F00973617 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				1D7C0A4427E9BB6500973617 /* GoogleService.swift */,
+				1D7C0A4427E9BB6500973617 /* ServiceAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 				1D7C0A4927E9BF2700973617 /* Geometry.swift in Sources */,
 				1D3F839027DB97670026E33F /* Photo.swift in Sources */,
 				1D3F838E27DB975B0026E33F /* Location.swift in Sources */,
-				1D7C0A4527E9BB6500973617 /* GoogleService.swift in Sources */,
+				1D7C0A4527E9BB6500973617 /* ServiceAPI.swift in Sources */,
 				1D3F838C27DB97280026E33F /* Place.swift in Sources */,
 				1DC7B75527E347B300EC6C97 /* Route.swift in Sources */,
 			);

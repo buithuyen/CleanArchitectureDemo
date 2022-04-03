@@ -16,6 +16,7 @@ class Navigator {
     static let `default` = Navigator()
 
     enum Scene {
+        case tabs(viewModel: HomeTabViewModel)
         case safari(URL)
         case safariController(URL)
         case webController(URL)
@@ -65,10 +66,11 @@ extension Navigator {
             let webview = WebViewController(viewModel: nil, navigator: self)
             webview.load(url: url)
             return webview
-            
-        case let .viewController(viewModel):
-            let controller = ExampleViewController(viewModel: viewModel, navigator: self)
-            return controller
+
+        case .viewController:
+            return nil
+        case let .tabs(viewModel):
+            return HomeTabViewController(viewModel: viewModel, navigator: self)
         }
     }
 

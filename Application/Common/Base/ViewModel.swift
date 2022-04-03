@@ -9,9 +9,9 @@ import Domain
 import Foundation
 
 class ViewModel: NSObject {
-    let networkProvider: GoogleService
+    let networkProvider: ServiceAPI
 
-    init(networkProvider: GoogleService) {
+    init(networkProvider: ServiceAPI) {
         self.networkProvider = networkProvider
         super.init()
     }

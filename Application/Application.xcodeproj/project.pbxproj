@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1472FF27F59A81006C30CC /* PlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1472FE27F59A81006C30CC /* PlaceListViewController.swift */; };
+		1D14730127F59AA6006C30CC /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14730027F59AA6006C30CC /* PlaceListViewModel.swift */; };
+		1D14730A27F5A5BF006C30CC /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14730927F5A5BF006C30CC /* HomeTabViewController.swift */; };
+		1D14730C27F5A5DA006C30CC /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14730B27F5A5DA006C30CC /* HomeTabViewModel.swift */; };
+		1D14730E27F5A5FD006C30CC /* HomeTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14730D27F5A5FD006C30CC /* HomeTabItem.swift */; };
+		1D14731327F5A803006C30CC /* NodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14731227F5A803006C30CC /* NodeController.swift */; };
+		1D14731F27F5A903006C30CC /* PlaceListNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14731E27F5A903006C30CC /* PlaceListNodeController.swift */; };
 		1D3F830127DB6BA20026E33F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F830027DB6BA20026E33F /* AppDelegate.swift */; };
-		1D3F830527DB6BA20026E33F /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F830427DB6BA20026E33F /* ExampleViewController.swift */; };
 		1D3F830827DB6BA20026E33F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F830627DB6BA20026E33F /* Main.storyboard */; };
 		1D3F830A27DB6BA40026E33F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F830927DB6BA40026E33F /* Assets.xcassets */; };
 		1D3F830D27DB6BA40026E33F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F830B27DB6BA40026E33F /* LaunchScreen.storyboard */; };
 		1D3F835627DB75040026E33F /* Domain.framework in Copy Framworks */ = {isa = PBXBuildFile; fileRef = 1D3F835427DB74EA0026E33F /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D7C0A0F27E8CB2900973617 /* Platform.framework in Copy Framworks */ = {isa = PBXBuildFile; fileRef = 1D3F834E27DB74E40026E33F /* Platform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D7C0A3C27E97F0A00973617 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A3B27E97F0A00973617 /* NSObject+Rx.swift */; };
-		1D7C0A4D27E9C51B00973617 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4C27E9C51B00973617 /* ExampleViewModel.swift */; };
 		1D81D5D427E0EFD00061714F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D81D5D327E0EFD00061714F /* R.generated.swift */; };
 		1D81D5D627E0F0490061714F /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D81D5D527E0F0490061714F /* Icons.xcassets */; };
 		1DC7B72927E1DFEA00EC6C97 /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B72827E1DFEA00EC6C97 /* Toolbar.swift */; };
@@ -69,9 +74,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D1472FE27F59A81006C30CC /* PlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewController.swift; sourceTree = "<group>"; };
+		1D14730027F59AA6006C30CC /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		1D14730927F5A5BF006C30CC /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		1D14730B27F5A5DA006C30CC /* HomeTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
+		1D14730D27F5A5FD006C30CC /* HomeTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabItem.swift; sourceTree = "<group>"; };
+		1D14731227F5A803006C30CC /* NodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeController.swift; sourceTree = "<group>"; };
+		1D14731E27F5A903006C30CC /* PlaceListNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListNodeController.swift; sourceTree = "<group>"; };
 		1D3F82FD27DB6BA20026E33F /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3F830027DB6BA20026E33F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D3F830427DB6BA20026E33F /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		1D3F830727DB6BA20026E33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D3F830927DB6BA40026E33F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D3F830C27DB6BA40026E33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +90,6 @@
 		1D3F834927DB74E40026E33F /* Platform.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Platform.xcodeproj; path = ../Platform/Platform.xcodeproj; sourceTree = "<group>"; };
 		1D3F834F27DB74EA0026E33F /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = ../Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 		1D7C0A3B27E97F0A00973617 /* NSObject+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
-		1D7C0A4C27E9C51B00973617 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		1D81D5D327E0EFD00061714F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1D81D5D527E0F0490061714F /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		1DC7B72827E1DFEA00EC6C97 /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
@@ -114,6 +124,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D14730527F5A563006C30CC /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				1D14730D27F5A5FD006C30CC /* HomeTabItem.swift */,
+				1D14730B27F5A5DA006C30CC /* HomeTabViewModel.swift */,
+				1D14730927F5A5BF006C30CC /* HomeTabViewController.swift */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		1D14730827F5A56E006C30CC /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				1D14730027F59AA6006C30CC /* PlaceListViewModel.swift */,
+				1D1472FE27F59A81006C30CC /* PlaceListViewController.swift */,
+			);
+			path = PlaceList;
+			sourceTree = "<group>";
+		};
+		1D14731927F5A8B3006C30CC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1D14730827F5A56E006C30CC /* PlaceList */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1D14731C27F5A8BF006C30CC /* AsyncDisplayKit */ = {
+			isa = PBXGroup;
+			children = (
+				1D14731D27F5A8CB006C30CC /* PlaceList */,
+			);
+			path = AsyncDisplayKit;
+			sourceTree = "<group>";
+		};
+		1D14731D27F5A8CB006C30CC /* PlaceList */ = {
+			isa = PBXGroup;
+			children = (
+				1D14731E27F5A903006C30CC /* PlaceListNodeController.swift */,
+			);
+			path = PlaceList;
+			sourceTree = "<group>";
+		};
 		1D3F82F427DB6BA20026E33F = {
 			isa = PBXGroup;
 			children = (
@@ -187,8 +240,9 @@
 		1D3F835C27DB8EAA0026E33F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1D7C0A4C27E9C51B00973617 /* ExampleViewModel.swift */,
-				1D3F830427DB6BA20026E33F /* ExampleViewController.swift */,
+				1D14731C27F5A8BF006C30CC /* AsyncDisplayKit */,
+				1D14731927F5A8B3006C30CC /* UIKit */,
+				1D14730527F5A563006C30CC /* HomeTab */,
 				1D3F830627DB6BA20026E33F /* Main.storyboard */,
 			);
 			path = Scenes;
@@ -234,6 +288,7 @@
 				1DC7B72827E1DFEA00EC6C97 /* Toolbar.swift */,
 				1DC7B72C27E1E2C300EC6C97 /* StackView.swift */,
 				1DC7B73B27E23EE200EC6C97 /* NavigationController.swift */,
+				1D14731227F5A803006C30CC /* NodeController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -422,24 +477,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC7B73527E2361200EC6C97 /* Application.swift in Sources */,
+				1D14731F27F5A903006C30CC /* PlaceListNodeController.swift in Sources */,
 				1DE2B46427E0A2C4004EB565 /* ViewModel.swift in Sources */,
 				1D7C0A3C27E97F0A00973617 /* NSObject+Rx.swift in Sources */,
 				1DE2B45F27E09F4A004EB565 /* UNUserNotificationCenter++.swift in Sources */,
-				1D3F830527DB6BA20026E33F /* ExampleViewController.swift in Sources */,
-				1D7C0A4D27E9C51B00973617 /* ExampleViewModel.swift in Sources */,
 				1D3F830127DB6BA20026E33F /* AppDelegate.swift in Sources */,
 				1DC7B73C27E23EE200EC6C97 /* NavigationController.swift in Sources */,
 				1DE2B46627E0E8E2004EB565 /* WebViewController.swift in Sources */,
 				1DE2B46227E09F4A004EB565 /* ViewController.swift in Sources */,
+				1D14730E27F5A5FD006C30CC /* HomeTabItem.swift in Sources */,
+				1D14730127F59AA6006C30CC /* PlaceListViewModel.swift in Sources */,
 				1D81D5D427E0EFD00061714F /* R.generated.swift in Sources */,
 				1DC7B72927E1DFEA00EC6C97 /* Toolbar.swift in Sources */,
 				1DE2B46A27E0EA03004EB565 /* BarButtonItem.swift in Sources */,
 				1DE2B46127E09F4A004EB565 /* Navigable.swift in Sources */,
 				1DE2B45D27E09F4A004EB565 /* UIViewController++.swift in Sources */,
 				1DE2B45E27E09F4A004EB565 /* Array++.swift in Sources */,
+				1D14730C27F5A5DA006C30CC /* HomeTabViewModel.swift in Sources */,
+				1D14731327F5A803006C30CC /* NodeController.swift in Sources */,
 				1DE2B44027E04EA8004EB565 /* Navigator.swift in Sources */,
 				1DE2B46027E09F4A004EB565 /* ViewModelType.swift in Sources */,
+				1D14730A27F5A5BF006C30CC /* HomeTabViewController.swift in Sources */,
 				1DC7B72D27E1E2C300EC6C97 /* StackView.swift in Sources */,
+				1D1472FF27F59A81006C30CC /* PlaceListViewController.swift in Sources */,
 				1DC7B74B27E3392D00EC6C97 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

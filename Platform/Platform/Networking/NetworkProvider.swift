@@ -34,11 +34,16 @@ public class NetworkProvider {
     }
 }
 
-// MARK: GoogleService
+// MARK: ServiceAPI
 
-extension NetworkProvider: GoogleService {
+extension NetworkProvider: ServiceAPI {
+    public func getNearbyPlaces() -> Single<[Place]> {
+        return request(APITargetType.nearbyPlace)
+            .map([Place].self, atKeyPath: "results", using: JSONDecoder(), failsOnEmptyData: true)
+    }
+
     public func getPlaceDetail(placeID: String) -> Single<PlaceDetail> {
-        return request(GoogleTargetType.placeDetail(placeID: placeID))
-            .map(PlaceDetail.self, atKeyPath: "result", using: JSONDecoder(), failsOnEmptyData: true)
+        return request(APITargetType.placeDetail(placeID: placeID))
+            .map(PlaceDetail.self, atKeyPath: "results", using: JSONDecoder(), failsOnEmptyData: true)
     }
 }

@@ -8,15 +8,19 @@ inhibit_all_warnings!
 
 def core_pods
   pod 'RxSwift'
-  pod 'Moya/RxSwift'
-  pod 'AlamofireNetworkActivityLogger'
 end
 
 def tool_pods
   pod 'R.swift'
+  pod 'AlamofireNetworkActivityLogger'
+end
+
+def network_pods
+  pod 'Moya/RxSwift'
 end
 
 def layout_pods
+  pod 'Texture'
   pod 'RxCocoa'
   pod 'SnapKit'
   pod 'Hero'              
@@ -26,12 +30,14 @@ target 'Application' do
   project 'Application/Application.xcodeproj'
   core_pods
   tool_pods
+  network_pods
   layout_pods
 end
 
 target 'Platform' do
   project 'Platform/Platform.xcodeproj'
   core_pods
+  network_pods
 end
 
 target 'Domain' do
