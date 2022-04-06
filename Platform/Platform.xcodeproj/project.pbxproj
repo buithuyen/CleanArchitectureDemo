@@ -11,14 +11,14 @@
 		1D7C0A0A27E8CAA400973617 /* NetworkConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A0927E8CAA400973617 /* NetworkConfigs.swift */; };
 		1D7C0A0C27E8CAF000973617 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A0B27E8CAF000973617 /* NetworkReachability.swift */; };
 		1D7C0A1127E8CB6A00973617 /* APITargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A1027E8CB6A00973617 /* APITargetType.swift */; };
-		1D7C0A3327E8CF8E00973617 /* Domain.framework in Copy Framworks */ = {isa = PBXBuildFile; fileRef = 1D7C0A3027E8CF4600973617 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27710215F4B4821357316CD4 /* Pods_Platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF9D33271CB088AC8789339 /* Pods_Platform.framework */; };
+		F5DB068F27FC40A500D59191 /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DB068E27FC40A400D59191 /* NetworkUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D7C0A2F27E8CF4600973617 /* PBXContainerItemProxy */ = {
+		F5DB069927FC58BB00D59191 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1D7C0A2B27E8CF4600973617 /* Domain.xcodeproj */;
+			containerPortal = F5DB069527FC58BB00D59191 /* Domain.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D3F82E827DB69E60026E33F;
 			remoteInfo = Domain;
@@ -32,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1D7C0A3327E8CF8E00973617 /* Domain.framework in Copy Framworks */,
 			);
 			name = "Copy Framworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,10 +44,11 @@
 		1D7C0A0927E8CAA400973617 /* NetworkConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigs.swift; sourceTree = "<group>"; };
 		1D7C0A0B27E8CAF000973617 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
 		1D7C0A1027E8CB6A00973617 /* APITargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITargetType.swift; sourceTree = "<group>"; };
-		1D7C0A2B27E8CF4600973617 /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = ../../Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 		451BDEEFCD3668ED7656D270 /* Pods-Platform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platform.debug.xcconfig"; path = "Target Support Files/Pods-Platform/Pods-Platform.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF9D33271CB088AC8789339 /* Pods_Platform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Platform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B062F2B4BC7A878449A821BA /* Pods-Platform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platform.release.xcconfig"; path = "Target Support Files/Pods-Platform/Pods-Platform.release.xcconfig"; sourceTree = "<group>"; };
+		F5DB068E27FC40A400D59191 /* NetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
+		F5DB069527FC58BB00D59191 /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = ../Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1D7C09D927E88D3D00973617 /* Platform */,
-				1D7C0A2A27E8CF3400973617 /* Dependencies */,
+				F5DB069427FC58A600D59191 /* Dependencies */,
 				1D7C09D827E88D3D00973617 /* Products */,
 				CEDAF9406DB942D0DCB5946F /* Pods */,
 				4F12B64D0A90C07B25515CCA /* Frameworks */,
@@ -97,6 +97,7 @@
 				1D7C0A0727E8CA9500973617 /* NetworkProvider.swift */,
 				1D7C0A0927E8CAA400973617 /* NetworkConfigs.swift */,
 				1D7C0A0B27E8CAF000973617 /* NetworkReachability.swift */,
+				F5DB068E27FC40A400D59191 /* NetworkUtilities.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -107,22 +108,6 @@
 				1D7C0A1027E8CB6A00973617 /* APITargetType.swift */,
 			);
 			path = TargetType;
-			sourceTree = "<group>";
-		};
-		1D7C0A2A27E8CF3400973617 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				1D7C0A2B27E8CF4600973617 /* Domain.xcodeproj */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
-		1D7C0A2C27E8CF4600973617 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1D7C0A3027E8CF4600973617 /* Domain.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4F12B64D0A90C07B25515CCA /* Frameworks */ = {
@@ -141,6 +126,22 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		F5DB069427FC58A600D59191 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F5DB069527FC58BB00D59191 /* Domain.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		F5DB069627FC58BB00D59191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5DB069A27FC58BB00D59191 /* Domain.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +205,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1D7C0A2C27E8CF4600973617 /* Products */;
-					ProjectRef = 1D7C0A2B27E8CF4600973617 /* Domain.xcodeproj */;
+					ProductGroup = F5DB069627FC58BB00D59191 /* Products */;
+					ProjectRef = F5DB069527FC58BB00D59191 /* Domain.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -216,11 +217,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1D7C0A3027E8CF4600973617 /* Domain.framework */ = {
+		F5DB069A27FC58BB00D59191 /* Domain.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Domain.framework;
-			remoteRef = 1D7C0A2F27E8CF4600973617 /* PBXContainerItemProxy */;
+			remoteRef = F5DB069927FC58BB00D59191 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -267,6 +268,7 @@
 			files = (
 				1D7C0A0A27E8CAA400973617 /* NetworkConfigs.swift in Sources */,
 				1D7C0A0827E8CA9500973617 /* NetworkProvider.swift in Sources */,
+				F5DB068F27FC40A500D59191 /* NetworkUtilities.swift in Sources */,
 				1D7C0A0C27E8CAF000973617 /* NetworkReachability.swift in Sources */,
 				1D7C0A1127E8CB6A00973617 /* APITargetType.swift in Sources */,
 			);

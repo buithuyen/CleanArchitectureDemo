@@ -44,30 +44,34 @@ class WebViewController: ViewController {
 
     lazy var toolbar: Toolbar = {
         let view = Toolbar()
-        view.items = [self.goBackBarButton, self.goForwardBarButton, spaceBarButton, self.stopReloadBarButton]
+        view.items = [self.goBackBarButton,
+                      self.goForwardBarButton,
+                      spaceBarButton,
+                      self.stopReloadBarButton]
         return view
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func buildLayout() {
         super.buildLayout()
-        
+
         navigationItem.rightBarButtonItem = rightBarButton
         stackView.insertArrangedSubview(webView, at: 0)
         stackView.addArrangedSubview(toolbar)
     }
-    
+
     override func updateLayout() {
         super.updateLayout()
-        
+
         goBackBarButton.isEnabled = webView.canGoBack
         goForwardBarButton.isEnabled = webView.canGoForward
-        stopReloadBarButton.image = webView.isLoading ? R.image.icon_navigation_stop(): R.image.icon_navigation_refresh()
+        stopReloadBarButton.image = webView.isLoading ?
+        R.image.icon_navigation_stop() : R.image.icon_navigation_refresh()
     }
-    
+
     func load(url: URL) {
         self.url.accept(url)
         webView.load(URLRequest(url: url))

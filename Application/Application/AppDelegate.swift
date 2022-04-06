@@ -5,10 +5,10 @@
 //  Created by ThuyenBV on 11/03/2022.
 //
 
+import AlamofireNetworkActivityLogger
 import Moya
 import Platform
 import UIKit
-import AlamofireNetworkActivityLogger
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UIApplication.shared.delegate as? AppDelegate
     }
 
-    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_: UIApplication,
+                     didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         NetworkActivityLogger.shared.level = .debug
         NetworkActivityLogger.shared.startLogging()
 

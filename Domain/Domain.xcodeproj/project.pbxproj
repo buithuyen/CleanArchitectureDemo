@@ -12,10 +12,7 @@
 		1D3F838E27DB975B0026E33F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F838D27DB975B0026E33F /* Location.swift */; };
 		1D3F839027DB97670026E33F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F838F27DB97670026E33F /* Photo.swift */; };
 		1D7C0A4527E9BB6500973617 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4427E9BB6500973617 /* ServiceAPI.swift */; };
-		1D7C0A4727E9BF0400973617 /* PlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4627E9BF0400973617 /* PlaceDetail.swift */; };
-		1D7C0A4927E9BF2700973617 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4827E9BF2700973617 /* Geometry.swift */; };
 		1D7C0A4B27E9BF5100973617 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4A27E9BF5100973617 /* Review.swift */; };
-		1DC7B75527E347B300EC6C97 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7B75427E347B300EC6C97 /* Route.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +21,7 @@
 		1D3F838D27DB975B0026E33F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1D3F838F27DB97670026E33F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1D7C0A4427E9BB6500973617 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
-		1D7C0A4627E9BF0400973617 /* PlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetail.swift; sourceTree = "<group>"; };
-		1D7C0A4827E9BF2700973617 /* Geometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		1D7C0A4A27E9BF5100973617 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
-		1DC7B75427E347B300EC6C97 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		3F9B12FC1FF069967057590D /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		B35C70BF407614C82C01B16E /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		C96768B0C0688E14F5FD136F /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,9 +72,6 @@
 				1D3F838B27DB97280026E33F /* Place.swift */,
 				1D3F838D27DB975B0026E33F /* Location.swift */,
 				1D3F838F27DB97670026E33F /* Photo.swift */,
-				1DC7B75427E347B300EC6C97 /* Route.swift */,
-				1D7C0A4627E9BF0400973617 /* PlaceDetail.swift */,
-				1D7C0A4827E9BF2700973617 /* Geometry.swift */,
 				1D7C0A4A27E9BF5100973617 /* Review.swift */,
 			);
 			path = Entries;
@@ -217,14 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D7C0A4727E9BF0400973617 /* PlaceDetail.swift in Sources */,
 				1D7C0A4B27E9BF5100973617 /* Review.swift in Sources */,
-				1D7C0A4927E9BF2700973617 /* Geometry.swift in Sources */,
 				1D3F839027DB97670026E33F /* Photo.swift in Sources */,
 				1D3F838E27DB975B0026E33F /* Location.swift in Sources */,
 				1D7C0A4527E9BB6500973617 /* ServiceAPI.swift in Sources */,
 				1D3F838C27DB97280026E33F /* Place.swift in Sources */,
-				1DC7B75527E347B300EC6C97 /* Route.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

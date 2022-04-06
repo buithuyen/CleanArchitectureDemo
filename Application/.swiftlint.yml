@@ -1,0 +1,12 @@
+excluded:
+  - Pods
+  - Resources/R.generated.swift
+disabled_rules: 
+  - missing_docs
+  - unused_closure_parameter
+  - cyclomatic_complexity
+  - inclusive_language
+  - trailing_whitespace
+opt_in_rules:
+  - empty_count
+line_length: 250

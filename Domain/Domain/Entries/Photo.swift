@@ -7,8 +7,9 @@
 
 import Foundation
 
-// MARK: - Photos
-public struct Photos: Codable {
+// MARK: - Photo
+
+public struct Photo: Codable {
     public let height: Int?
     public let photoReference: String?
     public let width: Int?

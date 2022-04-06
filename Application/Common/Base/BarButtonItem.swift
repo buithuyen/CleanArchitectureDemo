@@ -7,7 +7,9 @@
 
 import UIKit
 
-let spaceBarButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+let spaceBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                     target: nil,
+                                     action: nil)
 
 class BarButtonItem: UIBarButtonItem {
 

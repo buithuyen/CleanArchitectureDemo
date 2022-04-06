@@ -11,7 +11,7 @@ import UIKit
 class NodeController: ASNodeController<ASDisplayNode>, Navigable {
     var viewModel: ViewModel?
     var navigator: Navigator?
-    
+
     init(viewModel: ViewModel?, navigator: Navigator?) {
         self.viewModel = viewModel
         self.navigator = navigator

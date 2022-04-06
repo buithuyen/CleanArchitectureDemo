@@ -11,5 +11,5 @@ import RxSwift
 
 public protocol ServiceAPI {
     func getNearbyPlaces() -> Single<[Place]>
-    func getPlaceDetail(placeID: String) -> Single<PlaceDetail>
+//    func getPlaceDetail(placeID: String) -> Single<PlaceDetail>
 }

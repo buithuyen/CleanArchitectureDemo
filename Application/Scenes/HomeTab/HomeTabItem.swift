@@ -10,15 +10,15 @@ import UIKit
 
 enum HomeTabItem {
     case uikit, texture
-    
+
     var image: UIImage? {
         return R.image.icon_button_star()
     }
-    
+
     var selectedImage: UIImage? {
         return R.image.icon_button_unstar()
     }
-    
+
     var title: String {
         switch self {
         case .uikit:
@@ -27,15 +27,15 @@ enum HomeTabItem {
             return "AsyncDisplayKit"
         }
     }
-    
+
     func getController(with viewModel: ViewModel?, navigator: Navigator?) -> UIViewController {
         let itemBar = UITabBarItem(title: title, image: image, selectedImage: selectedImage)
         let controller = controller(with: viewModel, navigator: navigator)
         controller.tabBarItem = itemBar
-        
+
         return controller
     }
-    
+
     private func controller(with viewModel: ViewModel?, navigator: Navigator?) -> UIViewController {
         switch self {
         case .uikit:

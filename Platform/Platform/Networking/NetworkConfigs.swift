@@ -10,6 +10,7 @@ import Foundation
 struct NetworkConfigs {
     struct Google {
         static let baseURL = "https://maps.googleapis.com/maps/api/"
+        static let photoURL = "https://maps.googleapis.com/maps/api/place/photo"
         static let key = "AIzaSyAxdz4-JfihFHsU-wFs8pLuU0jNfnudefU"
         static let type = "restaurant"
     }

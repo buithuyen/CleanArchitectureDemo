@@ -3,7 +3,6 @@ workspace 'Clean Architecture.xcworkspace'
 platform :ios, '12.0'
 
 use_frameworks!
-#use_modular_headers!
 inhibit_all_warnings!
 
 def core_pods
@@ -23,7 +22,9 @@ def layout_pods
   pod 'Texture'
   pod 'RxCocoa'
   pod 'SnapKit'
-  pod 'Hero'              
+  pod 'Hero'
+  pod 'RxDataSources'
+  pod 'Kingfisher'
 end
 
 target 'Application' do

@@ -39,6 +39,12 @@
 		1DE2B46627E0E8E2004EB565 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2B46527E0E8E2004EB565 /* WebViewController.swift */; };
 		1DE2B46A27E0EA03004EB565 /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2B46927E0EA03004EB565 /* BarButtonItem.swift */; };
 		E3F26E738B42242587A2A897 /* Pods_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD6AAFA922D440FF1A4E6E2 /* Pods_Application.framework */; };
+		F573FFB827FD540500878456 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573FFB727FD540500878456 /* UIView++.swift */; };
+		F573FFC227FD9A2B00878456 /* LoadingTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573FFC127FD9A2B00878456 /* LoadingTracker.swift */; };
+		F573FFC427FD9A9F00878456 /* PlaceListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573FFC327FD9A9F00878456 /* PlaceListSection.swift */; };
+		F5DB068427FC305500D59191 /* PlaceItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DB068227FC305500D59191 /* PlaceItemTableViewCell.swift */; };
+		F5DB068527FC305500D59191 /* PlaceItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5DB068327FC305500D59191 /* PlaceItemTableViewCell.xib */; };
+		F5DB068727FC3A6600D59191 /* UIImageView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DB068627FC3A6600D59191 /* UIImageView++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +115,12 @@
 		1DE2B46927E0EA03004EB565 /* BarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
 		45BA2A75EBA476A112055892 /* Pods-Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.debug.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.debug.xcconfig"; sourceTree = "<group>"; };
 		927DC0626EA4FABDED1C2118 /* Pods-Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Application.release.xcconfig"; path = "Target Support Files/Pods-Application/Pods-Application.release.xcconfig"; sourceTree = "<group>"; };
+		F573FFB727FD540500878456 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
+		F573FFC127FD9A2B00878456 /* LoadingTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTracker.swift; sourceTree = "<group>"; };
+		F573FFC327FD9A9F00878456 /* PlaceListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListSection.swift; sourceTree = "<group>"; };
+		F5DB068227FC305500D59191 /* PlaceItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceItemTableViewCell.swift; sourceTree = "<group>"; };
+		F5DB068327FC305500D59191 /* PlaceItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceItemTableViewCell.xib; sourceTree = "<group>"; };
+		F5DB068627FC3A6600D59191 /* UIImageView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView++.swift"; sourceTree = "<group>"; };
 		FCD6AAFA922D440FF1A4E6E2 /* Pods_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,8 +149,10 @@
 		1D14730827F5A56E006C30CC /* PlaceList */ = {
 			isa = PBXGroup;
 			children = (
+				F573FFC327FD9A9F00878456 /* PlaceListSection.swift */,
 				1D14730027F59AA6006C30CC /* PlaceListViewModel.swift */,
 				1D1472FE27F59A81006C30CC /* PlaceListViewController.swift */,
+				F5DB067F27FC2FF700D59191 /* TableViewCell */,
 			);
 			path = PlaceList;
 			sourceTree = "<group>";
@@ -240,8 +254,8 @@
 		1D3F835C27DB8EAA0026E33F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1D14731C27F5A8BF006C30CC /* AsyncDisplayKit */,
 				1D14731927F5A8B3006C30CC /* UIKit */,
+				1D14731C27F5A8BF006C30CC /* AsyncDisplayKit */,
 				1D14730527F5A563006C30CC /* HomeTab */,
 				1D3F830627DB6BA20026E33F /* Main.storyboard */,
 			);
@@ -265,6 +279,8 @@
 				1DE2B45627E09F4A004EB565 /* Array++.swift */,
 				1DE2B45727E09F4A004EB565 /* UNUserNotificationCenter++.swift */,
 				1D7C0A3B27E97F0A00973617 /* NSObject+Rx.swift */,
+				F5DB068627FC3A6600D59191 /* UIImageView++.swift */,
+				F573FFB727FD540500878456 /* UIView++.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -289,6 +305,7 @@
 				1DC7B72C27E1E2C300EC6C97 /* StackView.swift */,
 				1DC7B73B27E23EE200EC6C97 /* NavigationController.swift */,
 				1D14731227F5A803006C30CC /* NodeController.swift */,
+				F573FFC127FD9A2B00878456 /* LoadingTracker.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -311,6 +328,15 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		F5DB067F27FC2FF700D59191 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F5DB068227FC305500D59191 /* PlaceItemTableViewCell.swift */,
+				F5DB068327FC305500D59191 /* PlaceItemTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,6 +351,7 @@
 				1D3F82FB27DB6BA20026E33F /* Resources */,
 				1D3F834727DB74580026E33F /* Copy Framworks */,
 				4E76F0E2F365F6C6306022B6 /* [CP] Embed Pods Frameworks */,
+				F5DB067C27FC293A00D59191 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -400,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DB068527FC305500D59191 /* PlaceItemTableViewCell.xib in Resources */,
 				1D3F830D27DB6BA40026E33F /* LaunchScreen.storyboard in Resources */,
 				1D3F830A27DB6BA40026E33F /* Assets.xcassets in Resources */,
 				1D81D5D627E0F0490061714F /* Icons.xcassets in Resources */,
@@ -428,7 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate --accessLevel public \"$SRCROOT/Resources/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Resources/R.generated.swift\"\n";
 		};
 		468D618F0D684B553DF99BF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -469,6 +497,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Application/Pods-Application-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F5DB067C27FC293A00D59191 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -476,8 +522,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F573FFB827FD540500878456 /* UIView++.swift in Sources */,
 				1DC7B73527E2361200EC6C97 /* Application.swift in Sources */,
 				1D14731F27F5A903006C30CC /* PlaceListNodeController.swift in Sources */,
+				F573FFC227FD9A2B00878456 /* LoadingTracker.swift in Sources */,
 				1DE2B46427E0A2C4004EB565 /* ViewModel.swift in Sources */,
 				1D7C0A3C27E97F0A00973617 /* NSObject+Rx.swift in Sources */,
 				1DE2B45F27E09F4A004EB565 /* UNUserNotificationCenter++.swift in Sources */,
@@ -486,8 +534,11 @@
 				1DE2B46627E0E8E2004EB565 /* WebViewController.swift in Sources */,
 				1DE2B46227E09F4A004EB565 /* ViewController.swift in Sources */,
 				1D14730E27F5A5FD006C30CC /* HomeTabItem.swift in Sources */,
+				F573FFC427FD9A9F00878456 /* PlaceListSection.swift in Sources */,
 				1D14730127F59AA6006C30CC /* PlaceListViewModel.swift in Sources */,
 				1D81D5D427E0EFD00061714F /* R.generated.swift in Sources */,
+				F5DB068427FC305500D59191 /* PlaceItemTableViewCell.swift in Sources */,
+				F5DB068727FC3A6600D59191 /* UIImageView++.swift in Sources */,
 				1DC7B72927E1DFEA00EC6C97 /* Toolbar.swift in Sources */,
 				1DE2B46A27E0EA03004EB565 /* BarButtonItem.swift in Sources */,
 				1DE2B46127E09F4A004EB565 /* Navigable.swift in Sources */,

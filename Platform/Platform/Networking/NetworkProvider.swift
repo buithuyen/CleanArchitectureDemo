@@ -42,8 +42,8 @@ extension NetworkProvider: ServiceAPI {
             .map([Place].self, atKeyPath: "results", using: JSONDecoder(), failsOnEmptyData: true)
     }
 
-    public func getPlaceDetail(placeID: String) -> Single<PlaceDetail> {
-        return request(APITargetType.placeDetail(placeID: placeID))
-            .map(PlaceDetail.self, atKeyPath: "results", using: JSONDecoder(), failsOnEmptyData: true)
-    }
+//    public func getPlaceDetail(placeID: String) -> Single<PlaceDetail> {
+//        return request(APITargetType.placeDetail(placeID: placeID))
+//            .map(PlaceDetail.self, atKeyPath: "results", using: JSONDecoder(), failsOnEmptyData: true)
+//    }
 }

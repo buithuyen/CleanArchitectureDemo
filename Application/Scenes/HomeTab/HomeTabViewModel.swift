@@ -8,7 +8,7 @@
 import Foundation
 
 class HomeTabViewModel: ViewModel {
-    
+
     func viewModel(for tabBarItem: HomeTabItem) -> ViewModel {
         return PlaceListViewModel(networkProvider: networkProvider)
     }

@@ -17,11 +17,11 @@ final class Application: NSObject {
 
     let networkProvider: ServiceAPI
     let navigator: Navigator
-    
+
     override init() {
         navigator = Navigator.default
         networkProvider = NetworkProvider()
-        
+
         super.init()
     }
 }
@@ -30,6 +30,6 @@ extension Application {
     func presentRootScreen(in window: UIWindow?) {
         guard let window = window else { return }
         let homeTabViewModel = HomeTabViewModel(networkProvider: networkProvider)
-        navigator.show(segue: .tabs(viewModel: homeTabViewModel), sender: nil, transition: .root(in: window))
+        navigator.show(segue: .tabs(viewModel: homeTabViewModel), sender: nil, transition: .root(with: window))
     }
 }

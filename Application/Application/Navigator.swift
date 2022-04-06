@@ -24,7 +24,7 @@ class Navigator {
     }
 
     enum Transition {
-        case root(in: UIWindow?)
+        case root(with: UIWindow?)
         case navigation(type: HeroDefaultAnimationType)
         case customModal(type: HeroDefaultAnimationType)
         case modal
@@ -45,7 +45,9 @@ class Navigator {
         sender?.navigationController?.dismiss(animated: true, completion: nil)
     }
 
-    func show(segue: Scene, sender: UIViewController?, transition: Transition = .navigation(type: .cover(direction: .left))) {
+    func show(segue: Scene,
+              sender: UIViewController?,
+              transition: Transition = .navigation(type: .cover(direction: .left))) {
         if let target = get(segue: segue) {
             show(target: target, sender: sender, transition: transition)
         }
@@ -76,7 +78,7 @@ extension Navigator {
 
     private func show(target: UIViewController, sender: UIViewController?, transition: Transition) {
         switch transition {
-        case let .root(in: window):
+        case let .root(with: window):
             let window = window ?? UIWindow(frame: UIScreen.main.bounds)
             UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromLeft, animations: {
                 window.rootViewController = target
