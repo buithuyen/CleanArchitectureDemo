@@ -10,6 +10,10 @@ import Foundation
 
 class ViewModel: NSObject {
     let networkProvider: ServiceAPI
+    
+    let loading = LoadingTracker()
+    let refreshLoading = LoadingTracker()
+    let loadmoreLoading = LoadingTracker()
 
     init(networkProvider: ServiceAPI) {
         self.networkProvider = networkProvider

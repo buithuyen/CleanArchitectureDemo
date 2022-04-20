@@ -21,11 +21,13 @@ class Navigator {
         case safariController(URL)
         case webController(URL)
         case viewController(ViewModel)
+        case placeList(PlaceListViewModel)
+        case placeDetail(PlaceDetailViewModel)
     }
 
     enum Transition {
-        case root(with: UIWindow?)
-        case navigation(type: HeroDefaultAnimationType)
+        case root(with: UIWindow)
+        case navigation(type: HeroDefaultAnimationType? = nil)
         case customModal(type: HeroDefaultAnimationType)
         case modal
         case detail
@@ -60,30 +62,28 @@ extension Navigator {
         case let .safari(url):
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
             return nil
-
         case let .safariController(url):
             return SFSafariViewController(url: url)
-
         case let .webController(url):
             let webview = WebViewController(viewModel: nil, navigator: self)
             webview.load(url: url)
             return webview
-
-        case .viewController:
-            return nil
+        case let .viewController(viewModel):
+            return ViewController(viewModel: viewModel, navigator: self)
         case let .tabs(viewModel):
             return HomeTabViewController(viewModel: viewModel, navigator: self)
+        case let .placeList(viewModel):
+            return PlaceListViewController(viewModel: viewModel, navigator: self)
+        case let .placeDetail(viewModel):
+            return PlaceDetailViewController(viewModel: viewModel, navigator: self)
         }
     }
 
     private func show(target: UIViewController, sender: UIViewController?, transition: Transition) {
         switch transition {
         case let .root(with: window):
-            let window = window ?? UIWindow(frame: UIScreen.main.bounds)
-            UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromLeft, animations: {
-                window.rootViewController = target
-                window.makeKeyAndVisible()
-            }, completion: nil)
+            window.rootViewController = target
+            window.makeKeyAndVisible()
             return
         case .custom: return
         default: break
@@ -101,7 +101,9 @@ extension Navigator {
         switch transition {
         case let .navigation(type):
             if let nav = sender.navigationController {
-                nav.hero.navigationAnimationType = .autoReverse(presenting: type)
+                if let type = type {
+                    nav.hero.navigationAnimationType = .autoReverse(presenting: type)
+                }
                 nav.pushViewController(target, animated: true)
             }
         case let .customModal(type):

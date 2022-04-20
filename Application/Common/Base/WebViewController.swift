@@ -7,6 +7,7 @@
 
 import RxCocoa
 import RxSwift
+import SnapKit
 import UIKit
 import WebKit
 
@@ -51,6 +52,19 @@ class WebViewController: ViewController {
         return view
     }()
 
+    lazy var stackView: StackView = {
+        let subviews: [UIView] = []
+        let stackView = StackView(arrangedSubviews: subviews)
+
+        view.addSubview(stackView)
+
+        stackView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+
+        return stackView
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -69,7 +83,7 @@ class WebViewController: ViewController {
         goBackBarButton.isEnabled = webView.canGoBack
         goForwardBarButton.isEnabled = webView.canGoForward
         stopReloadBarButton.image = webView.isLoading ?
-        R.image.icon_navigation_stop() : R.image.icon_navigation_refresh()
+            R.image.icon_navigation_stop() : R.image.icon_navigation_refresh()
     }
 
     func load(url: URL) {

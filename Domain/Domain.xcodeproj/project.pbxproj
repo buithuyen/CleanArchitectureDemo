@@ -13,6 +13,7 @@
 		1D3F839027DB97670026E33F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F838F27DB97670026E33F /* Photo.swift */; };
 		1D7C0A4527E9BB6500973617 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4427E9BB6500973617 /* ServiceAPI.swift */; };
 		1D7C0A4B27E9BF5100973617 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C0A4A27E9BF5100973617 /* Review.swift */; };
+		F59BC11D27FFE75100697B09 /* PlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BC11C27FFE75100697B09 /* PlaceDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3F9B12FC1FF069967057590D /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		B35C70BF407614C82C01B16E /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		C96768B0C0688E14F5FD136F /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59BC11C27FFE75100697B09 /* PlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				1D3F838D27DB975B0026E33F /* Location.swift */,
 				1D3F838F27DB97670026E33F /* Photo.swift */,
 				1D7C0A4A27E9BF5100973617 /* Review.swift */,
+				F59BC11C27FFE75100697B09 /* PlaceDetail.swift */,
 			);
 			path = Entries;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59BC11D27FFE75100697B09 /* PlaceDetail.swift in Sources */,
 				1D7C0A4B27E9BF5100973617 /* Review.swift in Sources */,
 				1D3F839027DB97670026E33F /* Photo.swift in Sources */,
 				1D3F838E27DB975B0026E33F /* Location.swift in Sources */,

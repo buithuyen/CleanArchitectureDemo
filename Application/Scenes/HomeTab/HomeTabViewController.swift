@@ -34,10 +34,7 @@ class HomeTabViewController: UITabBarController, Navigable {
 extension HomeTabViewController {
     func buildLayout() {
         let controllers = [HomeTabItem.uikit, HomeTabItem.texture]
-            .map({$0.getController(with: viewModel?.viewModel(for: $0), navigator: navigator)})
+            .map { $0.getController(with: viewModel?.viewModel(for: $0), navigator: navigator) }
         setViewControllers(controllers, animated: true)
-
-        tabBar.tintColor = .white
-        tabBar.backgroundColor = .darkGray
     }
 }

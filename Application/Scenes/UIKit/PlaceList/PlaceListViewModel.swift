@@ -13,20 +13,33 @@ import RxSwift
 class PlaceListViewModel: ViewModel, ViewModelType {
     struct Input {
         let refresh: Observable<Void>
+        let placeSelection: Observable<Place>
     }
 
     struct Output {
         let items: BehaviorRelay<[PlaceListSection]>
+        let placeSelected: Driver<PlaceDetailViewModel>
     }
 
     func handle(input: Input) -> Output {
         let items = BehaviorRelay<[PlaceListSection]>(value: [])
         input.refresh.flatMapLatest { () in
-            return self.networkProvider.getNearbyPlaces()
+            self.networkProvider
+                .getNearbyPlaces()
+                .trackActivity(self.loading)
+                .trackActivity(self.refreshLoading)
         }.subscribe { places in
             items.accept([PlaceListSection(items: places)])
         }.disposed(by: rx.disposeBag)
-        
-        return Output(items: items)
+
+        let placeSected = input.placeSelection
+            .compactMap { $0.placeID }
+            .asDriver(onErrorJustReturn: nil)
+            .compactMap { $0 }
+            .map { placeID in
+                PlaceDetailViewModel(placeID: placeID, networkProvider: self.networkProvider)
+            }
+        return Output(items: items,
+                      placeSelected: placeSected)
     }
 }

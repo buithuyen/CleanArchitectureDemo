@@ -16,8 +16,8 @@ struct NetworkConfigs {
     }
     
     struct Parse {
-        static let baseURL = "https://bety.back4app.io/classes/"
-        static let applicationID = "bJ2BytCmA3acg0PhXWHuRZSjlfwKuZHnvSGfysOF"
-        static let restAPIKey = "qnyi0NRg0zEbUcwL4FSYgYeFi8e5wLkwAUxUDUlb"
+        static let baseURL = "https://parseapi.back4app.com/classes/"
+        static let applicationID = "slS93XEXLQP3jzHqgNmYqWjIJM6RsglP6dg06ujX"
+        static let restAPIKey = "2Y7OJl2Bx80KLdKfEUmTCVQqR4Onbr3hkgF83JVg"
     }
 }

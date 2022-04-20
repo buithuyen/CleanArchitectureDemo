@@ -15,7 +15,8 @@ public struct Review: Codable {
     public let language: String?
     public let profilePhotoURL: String?
     public let rating: Int?
-    public let relativeTimeDescription, text: String?
+    public let relativeTimeDescription: String?
+    public let text: String?
     public let time: Int?
 
     enum CodingKeys: String, CodingKey {
@@ -25,7 +26,8 @@ public struct Review: Codable {
         case profilePhotoURL = "profile_photo_url"
         case rating
         case relativeTimeDescription = "relative_time_description"
-        case text, time
+        case text
+        case time
     }
 
     public init(authorName: String?, authorURL: String?, language: String?, profilePhotoURL: String?, rating: Int?, relativeTimeDescription: String?, text: String?, time: Int?) {

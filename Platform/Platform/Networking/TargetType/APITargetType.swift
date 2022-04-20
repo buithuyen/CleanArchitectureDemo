@@ -23,7 +23,7 @@ extension APITargetType: TargetType {
         switch self {
        
         case .nearbyPlace:
-            return "Restaurant"
+            return "Place"
         case .placeDetail(placeID: _):
             return ""
         }

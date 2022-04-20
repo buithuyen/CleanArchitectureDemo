@@ -15,7 +15,6 @@
 		1D14731327F5A803006C30CC /* NodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14731227F5A803006C30CC /* NodeController.swift */; };
 		1D14731F27F5A903006C30CC /* PlaceListNodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D14731E27F5A903006C30CC /* PlaceListNodeController.swift */; };
 		1D3F830127DB6BA20026E33F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F830027DB6BA20026E33F /* AppDelegate.swift */; };
-		1D3F830827DB6BA20026E33F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F830627DB6BA20026E33F /* Main.storyboard */; };
 		1D3F830A27DB6BA40026E33F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F830927DB6BA40026E33F /* Assets.xcassets */; };
 		1D3F830D27DB6BA40026E33F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F830B27DB6BA40026E33F /* LaunchScreen.storyboard */; };
 		1D3F835627DB75040026E33F /* Domain.framework in Copy Framworks */ = {isa = PBXBuildFile; fileRef = 1D3F835427DB74EA0026E33F /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -42,6 +41,11 @@
 		F573FFB827FD540500878456 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573FFB727FD540500878456 /* UIView++.swift */; };
 		F573FFC227FD9A2B00878456 /* LoadingTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573FFC127FD9A2B00878456 /* LoadingTracker.swift */; };
 		F573FFC427FD9A9F00878456 /* PlaceListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F573FFC327FD9A9F00878456 /* PlaceListSection.swift */; };
+		F59BC11B27FE97E100697B09 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BC11A27FE97E100697B09 /* TableViewController.swift */; };
+		F59BC12027FFE92900697B09 /* PlaceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BC11F27FFE92900697B09 /* PlaceDetailViewModel.swift */; };
+		F59BC12227FFE94500697B09 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BC12127FFE94500697B09 /* PlaceDetailViewController.swift */; };
+		F59BC12427FFF0D500697B09 /* UIColor++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BC12327FFF0D500697B09 /* UIColor++.swift */; };
+		F59BC12627FFF15500697B09 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59BC12527FFF15500697B09 /* UIFont.swift */; };
 		F5DB068427FC305500D59191 /* PlaceItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DB068227FC305500D59191 /* PlaceItemTableViewCell.swift */; };
 		F5DB068527FC305500D59191 /* PlaceItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5DB068327FC305500D59191 /* PlaceItemTableViewCell.xib */; };
 		F5DB068727FC3A6600D59191 /* UIImageView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DB068627FC3A6600D59191 /* UIImageView++.swift */; };
@@ -89,7 +93,6 @@
 		1D14731E27F5A903006C30CC /* PlaceListNodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListNodeController.swift; sourceTree = "<group>"; };
 		1D3F82FD27DB6BA20026E33F /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3F830027DB6BA20026E33F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1D3F830727DB6BA20026E33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D3F830927DB6BA40026E33F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D3F830C27DB6BA40026E33F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D3F830E27DB6BA40026E33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +121,11 @@
 		F573FFB727FD540500878456 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		F573FFC127FD9A2B00878456 /* LoadingTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTracker.swift; sourceTree = "<group>"; };
 		F573FFC327FD9A9F00878456 /* PlaceListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListSection.swift; sourceTree = "<group>"; };
+		F59BC11A27FE97E100697B09 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F59BC11F27FFE92900697B09 /* PlaceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewModel.swift; sourceTree = "<group>"; };
+		F59BC12127FFE94500697B09 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		F59BC12327FFF0D500697B09 /* UIColor++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor++.swift"; sourceTree = "<group>"; };
+		F59BC12527FFF15500697B09 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		F5DB068227FC305500D59191 /* PlaceItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceItemTableViewCell.swift; sourceTree = "<group>"; };
 		F5DB068327FC305500D59191 /* PlaceItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceItemTableViewCell.xib; sourceTree = "<group>"; };
 		F5DB068627FC3A6600D59191 /* UIImageView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView++.swift"; sourceTree = "<group>"; };
@@ -161,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				1D14730827F5A56E006C30CC /* PlaceList */,
+				F59BC11E27FFE90A00697B09 /* PlaceDetail */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -257,7 +266,6 @@
 				1D14731927F5A8B3006C30CC /* UIKit */,
 				1D14731C27F5A8BF006C30CC /* AsyncDisplayKit */,
 				1D14730527F5A563006C30CC /* HomeTab */,
-				1D3F830627DB6BA20026E33F /* Main.storyboard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -281,6 +289,8 @@
 				1D7C0A3B27E97F0A00973617 /* NSObject+Rx.swift */,
 				F5DB068627FC3A6600D59191 /* UIImageView++.swift */,
 				F573FFB727FD540500878456 /* UIView++.swift */,
+				F59BC12327FFF0D500697B09 /* UIColor++.swift */,
+				F59BC12527FFF15500697B09 /* UIFont.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -306,6 +316,7 @@
 				1DC7B73B27E23EE200EC6C97 /* NavigationController.swift */,
 				1D14731227F5A803006C30CC /* NodeController.swift */,
 				F573FFC127FD9A2B00878456 /* LoadingTracker.swift */,
+				F59BC11A27FE97E100697B09 /* TableViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -326,6 +337,15 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		F59BC11E27FFE90A00697B09 /* PlaceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F59BC11F27FFE92900697B09 /* PlaceDetailViewModel.swift */,
+				F59BC12127FFE94500697B09 /* PlaceDetailViewController.swift */,
+			);
+			path = PlaceDetail;
 			sourceTree = "<group>";
 		};
 		F5DB067F27FC2FF700D59191 /* TableViewCell */ = {
@@ -431,7 +451,6 @@
 				1D3F830D27DB6BA40026E33F /* LaunchScreen.storyboard in Resources */,
 				1D3F830A27DB6BA40026E33F /* Assets.xcassets in Resources */,
 				1D81D5D627E0F0490061714F /* Icons.xcassets in Resources */,
-				1D3F830827DB6BA20026E33F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +544,7 @@
 				F573FFB827FD540500878456 /* UIView++.swift in Sources */,
 				1DC7B73527E2361200EC6C97 /* Application.swift in Sources */,
 				1D14731F27F5A903006C30CC /* PlaceListNodeController.swift in Sources */,
+				F59BC12627FFF15500697B09 /* UIFont.swift in Sources */,
 				F573FFC227FD9A2B00878456 /* LoadingTracker.swift in Sources */,
 				1DE2B46427E0A2C4004EB565 /* ViewModel.swift in Sources */,
 				1D7C0A3C27E97F0A00973617 /* NSObject+Rx.swift in Sources */,
@@ -537,6 +557,7 @@
 				F573FFC427FD9A9F00878456 /* PlaceListSection.swift in Sources */,
 				1D14730127F59AA6006C30CC /* PlaceListViewModel.swift in Sources */,
 				1D81D5D427E0EFD00061714F /* R.generated.swift in Sources */,
+				F59BC11B27FE97E100697B09 /* TableViewController.swift in Sources */,
 				F5DB068427FC305500D59191 /* PlaceItemTableViewCell.swift in Sources */,
 				F5DB068727FC3A6600D59191 /* UIImageView++.swift in Sources */,
 				1DC7B72927E1DFEA00EC6C97 /* Toolbar.swift in Sources */,
@@ -544,9 +565,12 @@
 				1DE2B46127E09F4A004EB565 /* Navigable.swift in Sources */,
 				1DE2B45D27E09F4A004EB565 /* UIViewController++.swift in Sources */,
 				1DE2B45E27E09F4A004EB565 /* Array++.swift in Sources */,
+				F59BC12427FFF0D500697B09 /* UIColor++.swift in Sources */,
 				1D14730C27F5A5DA006C30CC /* HomeTabViewModel.swift in Sources */,
 				1D14731327F5A803006C30CC /* NodeController.swift in Sources */,
+				F59BC12027FFE92900697B09 /* PlaceDetailViewModel.swift in Sources */,
 				1DE2B44027E04EA8004EB565 /* Navigator.swift in Sources */,
+				F59BC12227FFE94500697B09 /* PlaceDetailViewController.swift in Sources */,
 				1DE2B46027E09F4A004EB565 /* ViewModelType.swift in Sources */,
 				1D14730A27F5A5BF006C30CC /* HomeTabViewController.swift in Sources */,
 				1DC7B72D27E1E2C300EC6C97 /* StackView.swift in Sources */,
@@ -558,14 +582,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1D3F830627DB6BA20026E33F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1D3F830727DB6BA20026E33F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D3F830B27DB6BA40026E33F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -705,7 +721,7 @@
 				INFOPLIST_FILE = Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -734,7 +750,7 @@
 				INFOPLIST_FILE = Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

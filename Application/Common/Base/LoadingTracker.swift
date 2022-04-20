@@ -30,7 +30,7 @@ private struct ActivityToken<E>: ObservableConvertibleType, Disposable {
     }
 }
 
-public class ActivityIndicator: SharedSequenceConvertibleType {
+public class LoadingTracker: SharedSequenceConvertibleType {
     public typealias Element = Bool
     public typealias SharingStrategy = DriverSharingStrategy
 
@@ -71,7 +71,7 @@ public class ActivityIndicator: SharedSequenceConvertibleType {
 }
 
 public extension ObservableConvertibleType {
-    func trackActivity(_ activityIndicator: ActivityIndicator) -> Observable<Element> {
+    func trackActivity(_ activityIndicator: LoadingTracker) -> Observable<Element> {
         return activityIndicator.trackActivityOfObservable(self)
     }
 }

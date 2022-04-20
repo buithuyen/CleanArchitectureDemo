@@ -11,34 +11,15 @@ import RxDataSources
 import RxSwift
 import UIKit
 
-class PlaceListViewController: ViewController {
-    lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.register(R.nib.placeItemTableViewCell)
-
-        return tableView
-    }()
-
-    var places: [Place] = []
-
+class PlaceListViewController: TableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        viewModel?.networkProvider.getNearbyPlaces().subscribe(onSuccess: { places in
-            self.places = places
-            self.tableView.reloadData()
-        }, onFailure: { _ in
-
-        }).disposed(by: rx.disposeBag)
     }
 
     override func buildLayout() {
         super.buildLayout()
 
-        view.addSubview(tableView)
-        tableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(UIEdgeInsets.zero)
-        }
+        tableView.register(R.nib.placeItemTableViewCell)
     }
 
     override func bindViewModel() {
@@ -51,10 +32,18 @@ class PlaceListViewController: ViewController {
         })
 
         guard let viewModel = viewModel as? PlaceListViewModel else { return }
-        let input = PlaceListViewModel.Input(refresh: Observable.just(()))
+
+        let refresh = Observable.of(Observable.just(()), refreshTrigger).merge()
+        let placeSelection = tableView.rx.modelSelected(Place.self).asObservable()
+        let input = PlaceListViewModel.Input(refresh: refresh,
+                                             placeSelection: placeSelection)
+
         let output = viewModel.handle(input: input)
         output.items.asObservable()
             .bind(to: tableView.rx.items(dataSource: dataSource))
             .disposed(by: rx.disposeBag)
+        output.placeSelected.drive { [weak self] viewModel in
+            self?.navigator?.show(segue: .placeDetail(viewModel), sender: self, transition: .navigation())
+        }.disposed(by: rx.disposeBag)
     }
 }
